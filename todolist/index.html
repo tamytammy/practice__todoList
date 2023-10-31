@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./main.scss/style.css">
+    <link rel="shortcut icon" href="./image/book.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <!-- 最大的容器，用來設定基本的padding、margin等 -->
+    <div class="container">
+        <!-- 用來包住下來兩個用flex排版使用的box -->
+        <div class="list-box">
+            <!-- 標題及文字區域 -->
+            <div class="box box__text">
+              <h1>To-Do List</h1>
+              <img src="./image/book.png" alt="planner">
+            </div>
+
+            <div class="box box__content">
+                <!-- 輸入文字區域 -->
+                <div class="btn">
+                    <input type="text" class="task" name="event" id="input_box" placeholder="Add your task!">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <!-- js控制區域 -->
+                <ul id="list_container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+
+            </div>
+   
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
